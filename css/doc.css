@@ -1,0 +1,70 @@
+#accordion {
+	width: 100%;
+	margin-top: 50px;
+}
+
+#accordion a {
+	text-decoration: none;
+}
+
+.type {
+	text-transform: uppercase;
+	font-style: oblique;
+	font-weight: bold;
+	color: #a4076b;
+}
+
+.nom {
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #a4076b;
+	text-align: center;
+	color: white;
+	border-radius: 20px;
+}
+
+.text {
+	color: black;
+	position: relative;
+	display: inline-block;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: justify;
+}
+
+.text-nopadding {
+	padding: 0;
+}
+
+.image-doc img {
+	width: 100%;
+	height: auto;
+}
+
+.s {
+	text-decoration: underline;
+}
+
+s {
+	text-decoration: none !important;
+}
+
+.lienDoc {
+	font-size: 16px;
+	color: #604e56;
+}
+
+.lienDoc:hover {
+	color: #ea076b;
+	text-decoration: underline;
+}
+
+.lienDoc a {
+	font-size: 16px;
+	color: #604e56;
+}
+
+.lienDoc a:hover {
+	color: #ea076b;
+	text-decoration: underline;
+}

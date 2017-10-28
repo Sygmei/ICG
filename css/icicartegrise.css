@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url('https://fonts.googleapis.com/css?family=Lato|Sedgwick+Ave');
+
+@font-face {
+	font-family: Din;
+	src: url(../fonts/din.ttf);
+}
+
+* {
+	font-family: 'Din';
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+.nav-item {
+	background-color: #705b64;
+	border-radius: 6px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 3px;
+	transition: background-color 1s;
+}
+
+.nav-item:hover {
+	background-color: #ea076b;
+}
+
+.nav-link {
+	color: white !important;
+	text-align: center;
+}
+
+.nav-hamburger {
+	z-index: 1;
+}
+
+.flex_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-end;
+	align-content: center;
+	height: 100%;
+}
+
+main {
+	margin-top: 73px;
+	height: auto;
+	background-color: #dbdbda;
+	min-height: calc(100vh - 187px);
+	background-image: url('../images/fondICG5.jpg');
+	background-size: cover;
+	opacity: 0.8;
+}
+
+.margin {
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+
+.page-header {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ea076b;
+	font-size: 28px;
+	font-weight: bold;
+	border-radius: 2px;
+	border-bottom: 3px solid #ea076b;
+}
+
+.page-header i {
+	vertical-align: baseline;
+}
+
+.header-box {
+	background-image: url('../images/carte_grise_fond_rvb.jpg');
+	background-size: cover;
+}
+
+.tel {
+	margin-top: 64px;
+	padding: 2%;
+	background-color: #ea076b;
+	color: white;
+	margin-bottom: 20%;
+	text-align: center;
+}
+
+.main-photo {
+	width: 100%;
+	border: 2px solid black;
+}
+
+.image-responsive {
+	width: 100%;
+	height: auto;
+}
+
+footer {
+	background-color: black;
+}
+
+.top-footer {
+	height: 50px;
+	background-color: grey;
+}
+
+.bottom-footer {
+	min-height: 55px;
+	height: auto;
+}
+
+.btn-footer {
+	padding: 1%;
+	margin-top: 6%;
+	margin-bottom: 6%;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 90%;
+	border-radius: 20px;
+	background-color: #604e56;
+	text-align: center;
+}
+
+.btn-footer:hover {
+	background-color: #ea076b;
+}
+
+.btn-footer a {
+	color: white;
+}
+
+.btn-footer a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.btn-vmv {
+	border: none;
+	color: #ffffff;
+	font-size: 20px;
+	border-radius: 26px;
+	background: #ea066a;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 640px) {
+	.btn-vmv {
+		font-size: 14px;
+	}
+}
+
+.btn-vmv:focus {
+	outline: none;
+}
+
+.btn-vmv:hover {
+	color: white;
+	background: #863e5d;
+	text-decoration: none;
+}
+
+.row-input {
+	margin-top: 2%;
+	margin-bottom: 10%;
+}
+
+.disabled {
+	cursor: not-allowed;
+}
+
+.alert-vmv {
+	background-color: #4d025d;
+	border-color: #ea066a;
+	color: white;
+}
+
+.alert-vmv-inversed {
+	background-color: #ea066a;
+	border-color: #853f5e;
+	color: white;
+}
+
+.alert-vmv-light {
+	background-color: #863e5d;
+	border-color: #462131;
+	color: #fff;
+}
+
+.alert-vmv-dark {
+	background-color: #545454;
+	border-color: #2e2328;
+	color: #fff;
+}
+
+.a-vmv {
+	text-decoration: none;
+	color: #863e5d;
+}
+
+.a-vmv:hover {
+	color: #ea066a;
+}
+
+.stroke {
+	list-style: none;
+	text-align: center;
+}
+.stroke li {
+	display: inline-block;
+}
+.stroke li a {
+	font-family: 'Lato';
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: #aaa;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.stroke li a,
+.stroke li a:after,
+.stroke li a:before {
+	transition: all .5s;
+}
+.stroke li a:hover {
+	color: #d10667;
+}
+
+.stroke li a {
+	position: relative;
+}
+.stroke li a:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: #d10667;
+	height: 1px;
+}
+.stroke li a:hover:after {
+	width: 100%;
+}
+
+.container-input {
+	background-color: #ea066a;
+	border: 2px solid #ea066a;
+	border-radius: 6px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.input-immat {
+	width: 80%;
+	text-align: center;
+	border-radius: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 90%;
+	padding: 0;
+	font-size: 46px;
+	letter-spacing: 4px;
+	border: none;
+}
+
+.input-immat:focus {
+	outline: none;
+}
+
+.question {
+	font-weight: bold;
+	font-size: 26px;
+	color: #ea066a;
+}
+
+.mailto {
+	color: white;
+}
+
+.mailto:hover {
+	color: white;
+}
+
+.alert-effect {
+	transition: all 0.8s ease-out;
+}
+
+.alert-effect:hover {
+	background-color: #ea066a;
+	transform: scale(1.2);
+	z-index: 1;
+}
+
+.text-vmv {
+	color: #ea066a;
+	font-weight: bold;
+}
+
+.accueil {
+	font-size: 26px;
+}

@@ -1,0 +1,24 @@
+.goToDoc {
+	background-color: pink;
+	color: white;
+	font-weight: bold;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.form-immat {
+	padding-bottom: 2%;
+}
+
+.demarche-titre {
+	color: #ea076b;
+	padding-top: 3%;
+	text-align: center;
+}
+
+.espace-bottom {
+	padding-bottom: 5%;
+}
+
+
+

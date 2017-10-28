@@ -1,0 +1,81 @@
+.button-wrap {
+  position: relative;
+  text-align: center;
+}
+
+.button-label {
+  display: inline-block;
+  padding: 1em 2em;
+  margin: 0.5em;
+  cursor: pointer;
+  color: #292929;
+  border-radius: 0.25em;
+  background: #efefef;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.button-label h1 {
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+}
+.button-label:hover {
+  background: #d6d6d6;
+  color: #101010;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.32);
+}
+.button-label:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0px -1px 0 rgba(0, 0, 0, 0.22);
+}
+@media (max-width: 40em) {
+  .button-label {
+    padding: 0em 1em 3px;
+    margin: 0.25em;
+  }
+}
+
+#titulaire:checked + .button-label {
+  background: #ea066a;
+  color: #efefef;
+}
+#titulaire:checked + .button-label:hover {
+
+  color: #e2e2e2;
+}
+
+#domicile:checked + .button-label {
+  background: #ea066a;
+  color: #efefef;
+}
+#domicile:checked + .button-label:hover {
+
+  color: #e2e2e2;
+}
+
+#achat:checked + .button-label {
+  background: #ea066a;
+  color: #efefef;
+}
+#achat:checked + .button-label:hover {
+
+  color: #e2e2e2;
+}
+
+#cession:checked + .button-label {
+  background: #ea066a;
+  color: #efefef;
+}
+#cession:checked + .button-label:hover {
+  
+  color: #e2e2e2;
+}
+
+.hidden {
+  display: none;
+}

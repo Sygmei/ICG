@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui">
+
+    <link rel="canonical" href="https://www.icicartegrise.fr/" />
+
+    <title>Ici Carte Grise</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="twitter:description" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.icicartegrise.fr/" />
+    <meta property="og:site_name" content="Ici Carte Grise" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/icicartegrise.css" />
+    <link rel="stylesheet" href="css/inputBox.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/">IciCarteGrise</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/concept">Concept</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class=" header-box">
+      <div class="container">
+
+
+      <div class="row">
+        <div class="col-md-2 offset-md-8 col-xs-3 offset-xs-6">
+          <p class="tel">
+            N° Surtaxé<br>01 23 45 67 89
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 offset-md-1 col-xs-4 offset-xs-1">
+          <div>
+            <img class="main-photo" src="images/immat.png" alt="image">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 offset-md-5">
+          <form action="php/verificationBox.php" method="post">
+            <input id="box" class="askBox btn" type="text" name="box" placeholder="Saississez votre N° de Box"></input>
+            <button id="submit" class="btn-vmv disabled" disabled type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            <button disabled class="btn-vmv" data-toggle="tooltip" data-placement="right" data-html="true" title="<h1>Aide</h1>"><i class="fa fa-question" aria-hidden="true"></i></button><br>
+          </form>
+        </div>
+        <div class="col-md-4 offset-md-6 row-input">
+          <a class="btn-vmv" href="/lieu-de-vente">Je n'ai pas de box</a>
+        </div>
+      </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="top-footer"></div>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-6">
+              <div class="btn-footer">
+                <a href="../login">Prestataire</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <div class="btn-footer">
+                <a href="../mentionsLegales">Mentions légales</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <div class="btn-footer">
+                <a href="../agrementHabilitation">Agrément habilitation</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <div class="btn-footer">
+                <a href="../doc">Pièces à fournir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/tooltip.js"></script>
+    <script type="text/javascript" src="js/accueil.js"></script>
+  </body>
+</html>

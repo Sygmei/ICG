@@ -1,0 +1,14 @@
+.askBox {
+	border-radius: 2px;
+	border: none;
+	padding-right: 2%;
+	padding-left: 2%;
+	width: auto;
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.askBox::placeholder {
+	color: #ea076b;
+}
