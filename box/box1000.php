@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 define("DB_USER", "icicarteogvmv");
 define("DB_PASSWORD", "Vmv29470");
 define("DB_NAME", "icicarteogvmv");
@@ -16,7 +16,7 @@ $row = $query->fetch();
 
 echo 'Nombre de Box dans la base de données : '.$row['count'].'<br><br>';
 
-$query = $pdo->prepare("SELECT * FROM box  LIMIT 1000");
+$query = $pdo->prepare("SELECT * FROM box LIMIT 6001");
 $query->execute();
 
 for ($i=0; $row = $query->fetch() ; $i++) {
