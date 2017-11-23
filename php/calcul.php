@@ -84,7 +84,7 @@ function calcul($data, $immatriculation, $dept, $demande) {
     }
 
 
-    if($data->type != 'VP' && $data->type != 'MTL') {
+    if($data->type != 'VP' && $data->type != 'MTL' && $data->type != 'MTT1' && $data->type != 'MTT2' && $data->type != 'CL' && $data->type != 'VASP') {
         if($data->ptac < 3.5) $taxe_pro = 34;
         else if($data->ptac < 6) $taxe_pro = 127;
         else if($data->ptac < 11) $taxe_pro = 189;
@@ -324,7 +324,7 @@ function calcul($data, $immatriculation, $dept, $demande) {
     }
 
     // Camionnette et véhicule handicapé exempté de taxe de co2
-    if($data->type == 'CTTE' || $data->type_detail == 'HANDICAP') {
+    if($data->type == 'CTTE' || $data->type_detail == 'HANDICAP' || $data->type == 'VASP') {
         $taxe_co2 = 0;
     }
 
