@@ -2,6 +2,7 @@
 
 require_once('../php/sendMail.php');
 
+error_log("Donnees POST après un paiement réussi : ".var_dump($_POST));
 
 $nom = $_SESSION['first_name'].' '.$_SESSION['last_name'];
 
