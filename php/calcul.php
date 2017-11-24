@@ -26,6 +26,10 @@ function calcul($data, $immatriculation, $dept, $demande) {
     }
     // ---------------------------------------------------------------------- //
 
+    if($data->type == 'CL') {
+      return 0;
+    }
+
     // ---------------------------------------------------------------------- //
     // Calcul d'age du véhicule
     // ---------------------------------------------------------------------- //
@@ -79,9 +83,6 @@ function calcul($data, $immatriculation, $dept, $demande) {
       return ceil((1.5 * $departement) + 6.76);
     }
 
-    if($data->type == 'CL') {
-      return 0;
-    }
 
 
     if($data->type != 'VP' && $data->type != 'MTL' && $data->type != 'MTT1' && $data->type != 'MTT2' && $data->type != 'CL' && $data->type != 'VASP') {
