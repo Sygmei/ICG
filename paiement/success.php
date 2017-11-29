@@ -2,7 +2,7 @@
 
 require_once('../php/sendMail.php');
 
-error_log("Donnees POST après un paiement réussi : ".var_dump($_POST));
+//error_log("Donnees POST après un paiement réussi : ".var_dump($_POST));
 
 $nom = $_SESSION['first_name'].' '.$_SESSION['last_name'];
 
@@ -20,7 +20,21 @@ $mail_data = array(
 $mail_data = json_encode($mail_data);
 
 $result1 = mailConfirmationPaiementToCustomer($mail_data);
+if ($result1) {
+  $message1 = "Un email récapitulatif viens de vous être envoyé !";
+  $color_message1 = "success";
+} else {
+  $message1 = "Nous n'avons pas pu vous envoyé d'email rérécapitulatif !";
+  $color_message1 = "danger";
+}
 $result2 = mailConfirmationPaiementToIcicartegrise($mail_data);
+if ($result2) {
+  $message2 = "Nous avons bien pris en compte votre demande !";
+  $color_message2 = "success";
+} else {
+  $message2 = "Une erreur est survenu dans votre demande, veuillez prendre contact avec contact@icicartegrise.fr !";
+  $color_message2 = "danger";
+}
 
 ?>
 <!doctype html>
@@ -42,17 +56,17 @@ $result2 = mailConfirmationPaiementToIcicartegrise($mail_data);
                 <p class="page-header"><i class="fa fa-list" aria-hidden="true"></i> Rétrospective box n° : <?php echo $_SESSION['box']; ?></p>
               </div>
               <div class="card-block">
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <div class="alert alert-<?=$color_message2 ?> alert-dismissible fade show" role="alert">
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  Nous avons bien pris en compte votre demande !
+                  <?=$message2 ?>
                 </div>
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <div class="alert alert-<?=$color_message1 ?> alert-dismissible fade show" role="alert">
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  Un email récapitulatif viens de vous être envoyé !
+                  <?=$message1 ?>
                 </div>
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">

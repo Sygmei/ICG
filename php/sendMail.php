@@ -4,6 +4,10 @@ require_once('class.phpmailer.php');
 
 function mailConfirmationPaiementToCustomer($data) {
   $data = json_decode($data);
+  if(filter_var($data->from, FILTER_VALIDATE_EMAIL)) {
+  } else {
+    return false;
+  }
   $address = utf8_decode($data->from);
   $nom = utf8_decode($data->nom);
   $from = "contact@icicartegrise.fr";
@@ -210,6 +214,10 @@ function mailConfirmationPaiementToIcicartegrise($data) {
   $data = json_decode($data);
   $address = "contact@icicartegrise.fr";
   // $address = "boiselet.jeremy@gmail.com";
+  if(filter_var($data->from, FILTER_VALIDATE_EMAIL)) {
+  } else {
+    return false;
+  }
   $nom = utf8_decode($data->nom);
   $from = utf8_decode($data->from);
 
