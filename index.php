@@ -42,7 +42,7 @@
 
       .gate {
         display: inline-block;
-        width: 215px;
+        width: 300px;
         padding: 10px 0 10px 15px;
         font-family: "Open Sans", sans;
         font-weight: 400;
@@ -174,7 +174,7 @@
             <div class="inputBox">
               <form id="pas-de-box" action="php/verificationBox.php" method="post">
                 <span>
-                  <input class="gate" id="box" type="text" name="box" placeholder="Saississez votre N° de Box" onkeyup='this.value=this.value.toUpperCase()' /><label for="box">N° Box <i data-toggle="tooltip" data-placement="right" data-html="true" title="<img src='/images/box.png' alt='box'>">?</i></label>
+                  <input class="gate" id="box" type="text" name="box" placeholder="Saississez votre N° de Box ou Pass" onkeyup='this.value=this.value.toUpperCase()' /><label for="box">N° Box <i data-toggle="tooltip" data-placement="right" data-html="true" title="<img src='/images/box.png' alt='box'>">?</i></label>
                 </span>
                 <button id="submit" class="btn-vmv disabled" disabled type="submit">OK</button>
                 <a class="btn-vmv mb-2" style="font-size: 14px;" href="/lieu-de-vente">Je n'ai pas de box</a>
