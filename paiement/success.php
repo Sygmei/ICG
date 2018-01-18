@@ -21,7 +21,7 @@ $mail_data = json_encode($mail_data);
 
 $result1 = mailConfirmationPaiementToCustomer($mail_data);
 if ($result1) {
-  $message1 = "Un email récapitulatif viens de vous être envoyé !";
+  $message1 = "Un email récapitulatif vient de vous être envoyé !";
   $color_message1 = "success";
 } else {
   $message1 = "Nous n'avons pas pu vous envoyé d'email rérécapitulatif !";
@@ -72,7 +72,7 @@ if ($result2) {
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  Votre box viens d'être désactivée !
+                  Votre box/pass vient d'être désactivée !
                 </div>
                 <div class="row">
                   <div class="col-md-4 col-sm-6 col-xs-12">
