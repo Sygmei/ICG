@@ -16,7 +16,11 @@ $row = $query->fetch();
 
 echo 'Nombre de Box dans la base de données : '.$row['count'].'<br><br>';
 
-$query = $pdo->prepare("SELECT * FROM box LIMIT 6001");
+$query = $pdo->prepare("SELECT * FROM box WHERE creee = 0 LIMIT 200 INTO OUTFILE '/box' 
+FIELDS ENCLOSED BY '\"'
+TERMINATED BY ';'
+ESCAPED BY '\"'
+LINES TERMINATED BY '\r\n';");
 $query->execute();
 
 for ($i=0; $row = $query->fetch() ; $i++) {
