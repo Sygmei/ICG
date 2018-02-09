@@ -24,7 +24,7 @@ if ($result1) {
   $message1 = "Un email récapitulatif vient de vous être envoyé !";
   $color_message1 = "success";
 } else {
-  $message1 = "Nous n'avons pas pu vous envoyé d'email rérécapitulatif !";
+  $message1 = "Nous n'avons pas pû vous envoyer d'email récapitulatif !";
   $color_message1 = "danger";
 }
 $result2 = mailConfirmationPaiementToIcicartegrise($mail_data);

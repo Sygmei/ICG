@@ -193,8 +193,8 @@ Vends ma voiture
 
 
 Toute l’équipe Icicartegrise est à votre disposition par :
--Mail contact@icicartegrise.fr
--Téléphone au 0899 252 272 (0.30€/min)
+- Mail contact@icicartegrise.fr
+- Téléphone au 0899 252 272 (0.30€/min)
 
 Nous vous remercions d’avoir choisi Icicartegrise.
 
@@ -632,7 +632,7 @@ function mailDemandeRappel($data) {
 </body>
 </html>';
   $bodyHTML = utf8_decode($bodyHTML);
-  $bodyTEXT = "Bonjour, vous avez reçu une demande de rappell !
+  $bodyTEXT = "Bonjour, vous avez reçu une demande de rappel !
 
   Détails du client :
     {$data->nom}
